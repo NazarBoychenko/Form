@@ -24,13 +24,13 @@ function Form() {
          <input className={styles.input} name="price" placeholder="Price" type="number" />
          <textarea className={styles.input} name="description" placeholder="Description"
             onChange={handleTextChange} style={{ height: heightUp }}></textarea>
-         <select className={styles.input} name="category" defaultValue="">
+         {/* <select className={styles.input} name="category" defaultValue="">
             <option value="" disabled>Category</option>
             <option value="phone">Телефон</option>
             <option value="toy">Іграшка</option>
             <option value="cleaning_equipment">Техніка для прибирання</option>
             <option value="kitchen_appliances">Техніка для кухні</option>
-         </select>
+         </select> */}
          <input style={{ display: "none" }} name="image" type="file" accept="image/png, image/jpeg" ref={inputRef} />
          <button className={`${styles.button_confirm} ${styles.button_file}`}
             type='button' onClick={selectFile}>Select a photo</button>
